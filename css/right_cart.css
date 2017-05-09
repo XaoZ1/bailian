@@ -1,0 +1,60 @@
+#right-cart{width:270px; height:100%;}
+.cart-top{width:270px; height:36px; background: #f2f2f2;position: absolute; z-index: 3; left:0; top:0;}
+.cart-top i{cursor: pointer;}
+
+.cart-top #hou{width:16px; height:16px; float: left; background: url(../images/sidebar_in.png) no-repeat 0 -44px;
+    margin: 10px 0 0 14px;}
+
+
+.cart-top #car{width:24px; height:36px; float: right; background: url(../images/sidebar_in.png) no-repeat 0 -5px;
+    margin-right:5px;}
+.cart-top #car:hover{background: url(../images/sidebar_in.png) no-repeat -25px -5px;}
+
+
+
+#right-detail{position: absolute; left:0; top:36px; height:100%;}
+#list{margin:0; padding:0;}
+
+#list li{height:60px; width:260px; padding:10px; list-style: none; overflow: hidden; position: relative;}
+
+#list li img{width:48px; height:48px; border:1px solid #cccccc;  float: left; margin-right:10px;}
+#list li .name{width:95px; height:35px;  font-size:12px; word-break: break-all; float: left; display: block;
+    overflow: hidden; line-height:16px;}
+#list li .price1{float:right; color:#d20000; font-weight: bold;}
+#list li .up{border-radius:50%; width:18px; height:18px; border:1px solid #bbbbbb; background:#f8f8f8; text-align: center;
+    color:#bbbbbb; padding:0; line-height:1px; font-size:12px; position: absolute; left:108px; top:46px; display: none;}
+#list li .down{border-radius:50%; width:18px; height:18px; border:1px solid #bbbbbb; background:#f8f8f8; text-align: center;
+    color:#bbbbbb; padding:0; line-height:1px; font-size:12px;  position: absolute; left:70px; top:46px; z-index:2; display: none;}
+#list li .num{width:25px; height:10px;  position: absolute; left:82px; top:47px; text-align: center; font-size:9px; display: none;}
+#list li .price{position: absolute; left:70px; top:46px;}
+
+#list li .del{width:16px; height:16px;  background:url("../images/sidebar_in.png") no-repeat 0 -92px;
+    position: absolute; left:240px; top:47px; display: none;}
+#list li .del:hover{ background:url("../images/sidebar_in.png") no-repeat -16px -92px;}
+
+
+#r-login{position: absolute; left:0; bottom:0; height:0; background: #f2f2f2; width:270px; padding:18px;}
+
+#r-login h1{margin-top:120px; font-weight: normal;height:34px; width:232px; float:left;}
+#r-login h1 a{float:right; font-size:12px; color:#4491d9; cursor: pointer;}
+#r-login input{width:198px; height:36px; border:1px solid #cccccc; margin-bottom:10px; padding-left: 40px;}
+
+#r-login input:nth-child(2) {background: #ffffff url(../images/register.png) no-repeat 10px 9px;}
+#r-login input:nth-child(3) {background: #ffffff url(../images/register.png) no-repeat 10px -52px;}
+
+#r-login .d1{text-align: right; width:241px; margin-bottom:10px;}
+
+#r-login #login{float:left; border:1px solid #e6133c; background:#e6133c; color:#fff; width:241px; padding: 0; cursor:pointer;}
+
+
+#r-login #other{width:240px; height:120px; border-top:1px solid #dddddd; margin-top:15px; float: left; position: relative; padding-top:20px;}
+#other span{width:126px; height:17px; position: absolute; top:-12px; padding-left:17px; padding-right:16px; left:40px; background:#f2f2f2;
+    text-align: center; }
+
+#other a{width:66px; height:22px; display: block; float:left; margin-left:17px; margin-bottom:10px;}
+
+#other a:nth-child(1){ background:url('../images/../images/login-cion-1.png') no-repeat 0 -22px;}
+#other a:nth-child(2){ background:url('../images/../images/login-cion-2.png') no-repeat 0 -22px;}
+#other a:nth-child(3){ background:url('../images/../images/login-cion-3.png') no-repeat 0 -22px;}
+#other a:nth-child(4){ background:url('../images/../images/login-cion-4.png') no-repeat 0 -22px;}
+

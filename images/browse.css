@@ -1,0 +1,66 @@
+.recommend-show{margin-top:20px; border:1px solid #ddd; border:1px solid #eeeeee; position:relative;}
+.recommend-top{height:48px; padding:0px 24px 0px 15px;}
+.recommend-top-left{float:left; font-size:18px; color:#333333; font-family:'Microsoft YaHei'; line-height:48px;}
+.recommend-ul{padding-bottom:15px; font-family:'Microsoft YaHei'; padding:0px 4px; position:relative; height:273px;}
+.recommend-money{line-height:42px; text-align:center; line-height:42px; font-size:18px; color:#e6133c; font-family:Verdana, Geneva, sans-serif;}
+.ul-recommend li{
+	position:absolute !important;
+	visibility:hidden;
+	width:100%;
+	top:0px;
+}
+.pro-recommend{
+	float:left;
+	padding:14px 14px 0px 14px;
+	border:1px solid #FFF;
+	margin-left:5px;
+	width:200px;
+	background:#fff;
+}
+.pro-recommend:hover{
+	border:1px solid #e6133c;
+	border-radius:2px;
+	box-shadow:0px 0px 5px #bbb;
+}
+.pro-img{
+	height:200px;
+	width:200px;
+}
+.progress-bar-ol{
+	position:absolute;
+	right:20px;
+	top: 19px;
+	height: 10px;
+}
+
+.progress-bar-ol li {
+	float: left;
+	width:16px;
+	display: inline;
+	
+}
+.progress-bar-ol li a{
+	width: 10px;
+	height: 10px;
+	background-image: url(http://k10.iblimg.com/resources/v4.0/css/i/dian-bg.png);
+	background-position: 0px top;
+	background-repeat: no-repeat;
+	display:block;
+	cursor:pointer;
+	text-indent:10px;
+	overflow:hidden;
+	position:relative;
+}
+.progress-bar-ol li .li-a-circle-red{
+	width: 10px;
+	height: 10px;
+	background-image: url(http://k10.iblimg.com/resources/v4.0/css/i/dian-bg.png);
+	background-position: -10px top;
+	background-repeat: no-repeat;
+	display:block;
+	cursor:pointer;
+	text-indent:10px;
+	overflow:hidden;
+	position:relative;
+
+}

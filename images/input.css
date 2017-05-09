@@ -1,0 +1,121 @@
+/*public*/
+.inp{
+	border-radius:2px;
+	border:1px solid #cccccc;
+	text-indent:0;
+	color:#000;
+	font-family:'Microsoft YaHei';
+	outline:none;
+}
+
+/*input-1*/
+.inp-primary{
+	height:34px;
+	width:232px;
+	background:#fff;
+	font-size:14px;
+	color:#000;
+	border:1px solid #cccccc;
+	padding:0 12px;
+}
+.inp-primary:hover{
+	border:1px solid #999999;
+	box-shadow:0px 0px 3px #ccc;
+	-moz-box-shadow:0px 0px 3px #ccc;
+	-ms-box-shadow:0px 0px 3px #ccc;
+	-o-box-shadow:0px 0px 3px #ccc;
+	-webkit-box-shadow:0px 0px 3px #ccc;
+}
+.inp-notprimary{
+	height:34px;
+	width:232px;
+	border:1px solid #cccccc;
+	background:#f2f2f2;
+	font-size:14px;
+	color:#444444;
+	padding:0 12px;
+}
+.inp-primaryfocus{
+	height:32px;
+	width:232px;
+	background:#fff;
+	font-size:14px;
+	color:#444444;
+	border:2px solid #7fcbfe;
+	box-shadow:0px 0px 3px #7fcbfe;
+	-moz-box-shadow:0px 0px 3px #7fcbfe;
+	-ms-box-shadow:0px 0px 3px #7fcbfe;
+	-o-box-shadow:0px 0px 3px #7fcbfe;
+	-webkit-box-shadow:0px 0px 3px #7fcbfe;
+	padding:0 11px;
+}
+.inp-primaryblur{
+	height:32px;
+	width:232px;
+	background:#fff;
+	font-size:14px;
+	color:#444444;
+	border:2px solid #f77799;
+	box-shadow:0px 0px 3px #f77799;
+	-moz-box-shadow:0px 0px 3px #f77799;
+	-ms-box-shadow:0px 0px 3px #f77799;
+	-o-box-shadow:0px 0px 3px #f77799;
+	-webkit-box-shadow:0px 0px 3px #f77799;
+	padding:0 11px;
+}
+
+/*input-2*/
+.inp-secondary{
+	height:24px;
+	width:240px;
+	background:#fff;
+	font-size:12px;
+	color:#000;
+	border:1px solid #cccccc;
+	padding:0 8px;
+}
+.inp-secondary:hover{
+	border:1px solid #999999;
+	box-shadow:0px 0px 3px #ccc;
+	-moz-box-shadow:0px 0px 3px #ccc;
+	-ms-box-shadow:0px 0px 3px #ccc;
+	-o-box-shadow:0px 0px 3px #ccc;
+	-webkit-box-shadow:0px 0px 3px #ccc;
+}
+.inp-notsecondary{
+	height:24px;
+	width:240px;
+	border:1px solid #cccccc;
+	background:#f2f2f2;
+	font-size:12px;
+	color:#444444;
+	padding:0 8px;
+}
+.inp-secondaryfocus{
+	height:22px;
+	width:240px;
+	background:#fff;
+	font-size:12px;
+	color:#444444;
+	border:2px solid #7fcbfe;
+	box-shadow:0px 0px 3px #7fcbfe;
+	-moz-box-shadow:0px 0px 3px #7fcbfe;
+	-ms-box-shadow:0px 0px 3px #7fcbfe;
+	-o-box-shadow:0px 0px 3px #7fcbfe;
+	-webkit-box-shadow:0px 0px 3px #7fcbfe;
+	padding:0 7px;
+}
+.inp-secondaryblur{
+	height:22px;
+	width:240px;
+	background:#fff;
+	font-size:12px;
+	color:#444444;
+	border:2px solid #f77799;
+	box-shadow:0px 0px 3px #f77799;
+	-moz-box-shadow:0px 0px 3px #f77799;
+	-ms-box-shadow:0px 0px 3px #f77799;
+	-o-box-shadow:0px 0px 3px #f77799;
+	-webkit-box-shadow:0px 0px 3px #f77799;
+	padding:0 7px;
+}

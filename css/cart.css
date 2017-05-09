@@ -1,0 +1,52 @@
+.head span{font-size:25px; float:left; line-height: 96px;}
+
+.head #login-r{float:right;}
+.head #login-r a{font-style: normal; color:#e6133c; line-height: 96px;}
+#head-wrap{border-bottom: 1px solid #dddddd;}
+
+
+#cart-wrap{min-height:327px; width:100%; background:#fff; padding-bottom:30px;      }
+.cart{min-height:327px; width:990px; margin:0 auto;}
+.cart .title{height:50px; width:100%; border-bottom: 1px solid #cccccc;}
+.cart .title h2{float:left; font-size:16px; color:#333333; line-height:50px;}
+.cart .title h2 span{font-size:16px; color:#e6133c;}
+.cart .title div{float:right; color:#999999; height:50px; line-height:50px; }
+.cart .title div i,.cart .title div em{font-style: normal;}
+.cart .title div i{color:#000;margin-left:10px;}
+.cart .title div em{color:#d62233; font-size: 16px;}
+.cart .title div a{display:inline-block; width:70px; height:26px; background:#bbbbbb; color:#fff;
+    text-decoration: none; text-align: center;line-height:26px; margin-left:20px;}
+.cart .t-head{height:44px; width:100%; border-bottom: 1px solid #cccccc; line-height: 44px;}
+.cart .t-head #t1{width:145px;}
+.cart .t-head #t2{width:390px;}
+.cart .t-head #t3{width:138px;}
+.cart .t-head #t4{width:102px;}
+.cart .t-head #t5{width:132px;}
+
+
+
+#list li {width:975px; height:95px; border-bottom:1px solid #cccccc; background:#fffaf1; padding-top:15px;
+    padding-left:15px;}
+#list li .check{float:left; margin-right:10px;}
+#list li img{float:left; width:78px; height:78px; border:1px solid #dddddd; margin-right:10px;}
+#list li .name{width:188px; word-break: break-all; display: block; float:left; height:78px;}
+#list li .price{margin-left:216px; width:120px; display: block; float:left; height:78px;}
+#list li .num{width:40px; height:24px; border:1px solid #aaaaaa; text-align: center;}
+
+#list li .up{width:18px; height:28px; border:none; background:#f0f0f0; float:left;}
+#list li input {float:left;}
+#list li .down{ width:18px; height:28px; border:none; background:#f0f0f0; float:left;}
+#list li .price1{width:133px; height:78px; margin-left:62px; color:#d62233; font-weight: bold; display: block; float:left;}
+
+
+#btn-list{width:990px; height:50px;background: #f3f3f3; box-shadow: 0 5px 10px rgba(0,0,0,0.3); margin-top:18px;}
+#btn-list button{width:120px; height:50px; background: #d62233; color:#fff; border:none; float:right; font-size:16px; cursor: pointer;}
+
+#btn-list ul{float:left;}
+#btn-list ul li{float:left;  margin-top:15px; margin-left:15px;}
+#btn-list ul li span{background:url("../images/cart_icon.png") no-repeat 0 -135px; width:12px; height:12px; float:left; display: block;
+    margin-top:4px; margin-right:5px;}
+
+#btn-list .money{width:228px; height:35px; float:right; padding-top:5px;}
+#btn-list .money1{width:90px; height:35px; float: right;}
+#btn-list #total{color:#d62233; font-size:14px; font-weight: bolder;}

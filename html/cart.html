@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <script src="../JavaScript/jquery-1.12.3.js"></script>
+    <script src="../JavaScript/jquery.cookie.js"></script>
+    <script src="../JavaScript/cart.js"></script>
+
+</head>
+<body>
+<div id="top-wrap">
+    <div class="top">
+        <div class="left">百联集团旗下全渠道电商平台</div>
+        <ul>
+            <li class="top-nav">网站导航<span></span>
+                <div id="inbox1">
+                    <a href="#">百联集团官网</a>
+                    <a href="#">安付宝网</a>
+                    <a href="#">第一医药</a>
+                    <a href="#">OK会员卡专区</a>
+                </div>
+            </li>
+            <li>消息</li>
+        </ul>
+        <ol>
+            <li><a href="login.html" class="no-border">请登录</a><a href="register.html">注册</a></li>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">我的百联<span></span>
+                <div class="lis">
+                    <i>我的订单</i>
+                    <i>我的评价</i>
+                    <i>我的积分</i>
+                    <i>我的收藏</i>
+                    <i>我的优惠券</i>
+                </div>
+            </a></li>
+            <li><a href="#">充值缴费 <span></span>
+                <div class="lis" id="chongzhi">
+                    <dl>
+                        <dt>水电煤缴费</dt>
+                        <dd>缴费首页</dd>
+                        <dd>水费缴费</dd>
+                        <dd>电费缴费</dd>
+                        <dd>燃气缴费</dd>
+                    </dl>
+                    <dl>
+                        <dt>手机充值</dt>
+                        <dd>手机充值</dd>
+                        <dd>流量充值</dd>
+                        <dd>更多充值</dd>
+                    </dl>
+                    <dl>
+                        <dt>其他缴费</dt>
+                        <dd>加油卡充值</dd>
+                        <dd>固话/宽带充值</dd>
+                        <dd>铁通缴费</dd>
+                        <dd>有线电视缴费</dd>
+                    </dl>
+                    <dl class="no-border">
+                        <dt>游戏点卡</dt>
+                        <dd>腾讯Q币充值</dd>
+                        <dd>盛大点券充值</dd>
+                        <dd>更多游戏</dd>
+                    </dl>
+                </div>
+            </a></li>
+            <li><a href="#">客户服务 <span></span>
+                <div class="lis">
+                    <i>在线客服</i>
+                    <i>帮助中心</i>
+                    <i>意见反馈</i>
+                </div>
+            </a></li>
+            <li><a href="#">掌上百联 <span></span>
+                <div class="lis">
+                    <img src="../images/res13849.jpg"/>
+                </div>
+            </a></li>
+            <li><a href="#">购物车</a></li>
+        </ol>
+    </div>
+</div>
+<!-- -------------------------------主页头部结构-logo 搜索----------------------------------->
+<div id="head-wrap">
+    <div class="head">
+        <a href="index.html"><img src="../images/logo-1.png"/></a>
+        <span>购物车</span>
+        <div id="login-r">现在<a href="login.html">登录</a>,您购物车中的商品将会被永久保存</div>
+    </div>
+</div>
+
+<!-- -------------------------------购物车主体----------------------------------->
+<div id="cart-wrap">
+    <div class="cart">
+        <div class="title">
+            <h2>全部商品<span>0</span></h2>
+            <div>优惠:<i>-￥0.00 商品金额（不含运费）：</i><em>-￥0.00</em><a href="##">去结算</a></div>
+        </div>
+        <div class="t-head">
+            <table>
+                <tr>
+                    <td id="t1">全选 <input type="checkbox" checked="checked" id="allChecked" /></td>
+                    <td id="t2">商品信息</td>
+                    <td id="t3">单价（元）</td>
+                    <td id="t4">件数</td>
+                    <td id="t5">金额（元）</td>
+                    <td id="t6">操作</td>
+                </tr>
+            </table>
+        </div>
+        <ul id="list">
+            <!--<li>
+				<input class="check" type="checkbox" />
+				<img src="images/1.jpg" />
+				<span class="name">单车sdsadsafdsadsadsadsadsadsadsadsadsadsa</span>
+				<span class="price">1999</span>
+				<input type="button" value="-" />
+				<input id="num" type="text" value="5" />
+				<input type="button" value="+" />
+				<a href="#">删除</a>
+			</li>-->
+        </ul>
+        <div id="btn-list">
+            <button>去结算</button>
+            <ul>
+                <li>全选 <input type="checkbox" checked="checked" /></li>
+                <li><a id="deletePart" href="#"><span></span>删除</a></li>
+                <li><a href="##">清除失效商品</a></li>
+                <li><a href="##">移入收藏夹</a></li>
+            </ul>
+            <div class="money">
+                商品金额（不含运费）
+                <div class="money1"><span id="total">0</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- -------------------------------页面脚部---------------------------------->
+<div id="footwrap">
+    <div class="foot">
+        <dl>
+            <dt><img src="../images/footer-icon-1.png"/>新手入门</dt>
+            <dd><a href="##">购物流程</a></dd>
+            <dd><a href="##">会员介绍</a></dd>
+            <dd><a href="##">常见问题</a></dd>
+            <dd><a href="##">发票说明</a></dd>
+            <dd><a href="##">联系客服</a></dd>
+        </dl>
+        <dl>
+            <dt><img src="../images/footer-icon-2.png"/>配送服务</dt>
+            <dd><a href="##">配送范围及运费</a></dd>
+            <dd><a href="##">配送进度查询</a></dd>
+            <dd><a href="##">自提服务</a></dd>
+            <dd><a href="##">商品验货与签收</a></dd>
+        </dl>
+        <dl>
+            <dt><img src="../images/footer-icon-3.png"/>支付方式</dt>
+            <dd><a href="##">货到付款</a></dd>
+            <dd><a href="##">在线支付</a></dd>
+        </dl>
+        <dl>
+            <dt><img src="../images/footer-icon-4.png"/>售后服务</dt>
+            <dd><a href="##">退换货政策</a></dd>
+            <dd><a href="##">退换货流程</a></dd>
+            <dd><a href="##">退款说明</a></dd>
+        </dl>
+        <dl>
+            <dt><img src="../images/footer-icon-6.png"/>特色服务</dt>
+            <dd><a href="##">优鲜集市</a></dd>
+            <dd><a href="##">生鲜随心订</a></dd>
+            <dd><a href="##">精选篮筐</a></dd>
+            <dd><a href="##">全球购</a></dd>
+            <dd><a href="##">精品闪购</a></dd>
+            <dd><a href="##">百联到家</a></dd>
+        </dl>
+
+    </div>
+</div>
+
+<!------------------copy----------------------------->
+<div id="copywrap">
+    <div class="copy">
+        <ul>
+            <li><a href="##">关于我们</a></li>
+            <li><a href="##">联系我们</a></li>
+            <li><a href="##">加盟合作</a></li>
+            <li><a href="##">诚征英才</a></li>
+            <li><a href="##" style="border-right:0">友情链接</a></li>
+        </ul>
+        <p>百联集团有限公司旗下 上海百联全渠道电子商务有限公司版权所有 | 客服电话：400-900-8800 | 沪ICP备15028847号</p>
+        <div>互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</div>
+        <div><img src="../images/gongan.png"/> 沪公网安备 31010102002366号<img src="../images/wangjing.png"/>  网购大家评  上海工商</div>
+    </div>
+</div>
+</body>
+</html>

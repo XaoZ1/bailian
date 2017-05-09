@@ -1,0 +1,68 @@
+html,body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {margin: 0; padding:0;}
+
+fieldset, img { border:none; }
+img{display: block;}
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+body { color:#333;  font:12px/20px "微软雅黑","宋体","Arial Narrow",HELVETICA; background:#f4f4f4;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a { color:#666; text-decoration:none; }
+a:visited { color:#666; }
+a:hover, a:active, a:focus { color:#ff8400; text-decoration:underline; }
+
+#meng{width:100%; height:100%; background:rgba(0,0,0,0.6); position: fixed; display: none; z-index:3;}
+
+
+#tips{width:500px; height:200px; background: #dfff66; position:fixed; left:50%; top:50%; margin-left:-250px;
+    margin-top:-100px; border:1px solid #8d8d8d; z-index:5; font-size:16px; line-height:100px; text-align: center; display: none;}
+#tips span{color:#d71a3f;}
+
+#head-wrap{width:100%; height:110px;}
+.head{width:950px; height:110px; margin:0 auto;}
+.head a{margin-top:28px; float: left; padding-right:40px; border-right:1px solid #8d8d8d;}
+.head span{font-size:30px; float: left; margin-top:44px; margin-left:40px;}
+
+#main-wrap{height:633px; width:100%;}
+.main{width:950px; height:633px; margin:0 auto; border:1px solid #e1dfda;
+    background-color: #fff;}
+
+#m-head{width:100%; height:50px; border-bottom: 1px solid #e1dfda; line-height:50px;}
+#m-head h4{float:left; margin-left:20px; color:#ff002a;}
+#m-head span{float:right; margin-right:20px; color:#63625d;}
+#m-head span a{color:#0088cc;}
+
+.main form{width:950px; height:582px; padding: 50px 0 74px 191px;}
+.main form label{display: block;    padding: 10px 0; width:760px;}
+.main form label span{font-size:16px; color:#333333; text-align: right; width:120px; display: inline-block;}
+.main form label span i{color:#df3d64;  margin-right:10px; font-style: normal;}
+
+.main form label input{ padding-left:30px; width:268px; height:34px; border:1px solid #cccccc; border-radius: 2px;
+    background: #ffffff url(../images/register.png) no-repeat 10px 9px;}
+.main form label:nth-child(1) input{background: #ffffff url(../images/register.png) no-repeat 10px 9px;}
+.main form label:nth-child(2) input{background: #ffffff url(../images/register.png) no-repeat 10px -52px;}
+.main form label:nth-child(3) input{background: #ffffff url(../images/register.png) no-repeat 10px -52px;}
+.main form label:nth-child(4) input{background: #ffffff url(../images/register.png) no-repeat 10px -180px;}
+.main form label:nth-child(5) input{background: #ffffff url(../images/register.png) no-repeat 10px -51px;}
+.main form label  p{display: inline; float: right; line-height: 34px; margin-right:340px; border:1px solid #8d8d8d; height:34px; width:80px;
+        text-align: center; font-size: 16px; }
+.main form label  em{display: inline; float: right; line-height: 34px; margin-right:340px; border:1px solid #8d8d8d; height:34px; width:80px;
+    text-align: center; font-size: 12px; font-style: normal; background:#f5f5f5;}
+
+.main form label:nth-child(6) input{background: #ffffff url(../images/register.png) no-repeat 10px -51px;}
+.main form label:nth-child(7) input{background: #ffffff url(../images/register.png) no-repeat 10px -287px;}
+
+.main form label:nth-child(8) a{color:#0088ca;}
+
+.main form label .short{width:168px; height:34px;}
+.main form label .check{width:13px; height:13px; margin-left:120px; background: #55779b;}
+
+.main form #btn{width:300px; height:36px; background: #e6133c; color:#fff; font-size:18px; border:none; margin-left:120px;}
+
+
+
+#foot-wrap{width:100%; height:138px;}
+.foot{width:950px; height:103px; margin:0 auto; background:url("../images/login-bottom-bg.png") no-repeat 0 0;
+    padding-top:35px;}
+
+.foot ul{width:370px; height:20px; margin:0 auto;}
+.foot ul li{float:left; padding: 0 12px; border-right:1px solid #deccdd;}
+.foot p{text-align: center; height:25px; width:100%;}

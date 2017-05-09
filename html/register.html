@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/jquery-1.6.2.min.js"></script>
+    <link rel="stylesheet" href="../css/validform.css">
+    <link rel="stylesheet" href="../css/jquery.idcode.css">
+    <script src="../JavaScript/jquery.idcode.js"></script>
+    <script>
+        $(function () {
+            $.idcode.setCode();
+
+            var f1 = false;
+            var f2 = false;
+            var f3 = false;
+            var f4 = false;
+
+
+            $("form label").find("input").focus(function () {
+                $(this).css({border:"1px solid #7fcbfe",boxShadow:"0 0 5px #7fcbfe"});
+
+            });
+            
+
+            $("form label").eq(0).find("input").blur(function () {
+                var reg = 	/^[a-z0-9_-]{6,20}$/;
+                var res = reg.test($(this).val());
+
+                if(!res){
+                    //console.log(1);
+                    $(this).css({border:"1px solid #f77799",boxShadow:"0 0 5px #f77799"}).siblings("b").html("请输入合法用户名！")
+                        .css({background:"url(../images/error.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+
+                    f1 = false;
+                }else{
+                    $(this).css({border:"1px solid #cccccc;",boxShadow:"0 0 0"}).siblings("b")
+                        .css({background:"url(../images/right.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+                    f1 = true;
+                }
+            });
+            $("form label").eq(1).find("input").blur(function () {
+                var reg = /^[a-z0-9_-]{6,18}$/;
+                var res = reg.test($(this).val());
+
+                if(!res){
+                    //console.log(1);
+                    $(this).css({border:"1px solid #f77799",boxShadow:"0 0 5px #f77799"}).siblings("b").html("请输入正确格式的密码！")
+                        .css({background:"url(../images/error.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+                    f2 = false;
+                }else{
+                    $(this).css({border:"1px solid #cccccc;",boxShadow:"0 0 0"}).siblings("b")
+                        .css({background:"url(../images/right.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+                    f2 = true;
+                }
+            });
+            $("form label").eq(2).find("input").blur(function () {
+                var reg = 	/^[a-z0-9_-]{6,20}$/;
+                var res = reg.test($(this).val());
+
+                if(!res){
+                    //console.log(1);
+                    $(this).css({border:"1px solid #f77799",boxShadow:"0 0 5px #f77799"}).siblings("b").html("请保持两次输入的密码一致！")
+                        .css({background:"url(../images/error.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+                    f3 = false;
+                }else{
+                    $(this).css({border:"1px solid #cccccc;",boxShadow:"0 0 0"}).siblings("b")
+                        .css({background:"url(../images/right.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+                    f3 = true;
+                }
+            });
+            $("form label").eq(3).find("input").blur(function () {
+                var reg = 	 /^((13[0-9])|(14[57])|(15([0-3]|[5-9]))|(18[05-9]))\d{8}$/;
+                var res = reg.test($(this).val());
+
+                if(!res){
+                    //console.log(1);
+                    $(this).css({border:"1px solid #f77799",boxShadow:"0 0 5px #f77799"}).siblings("b").html("请输入正确的手机号！")
+                        .css({background:"url(../images/error.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+                    f4 = false;
+                }else{
+                    $(this).css({border:"1px solid #cccccc;",boxShadow:"0 0 0"}).siblings("b")
+                        .css({background:"url(../images/right.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+                    f4 = true;
+                }
+            });
+
+            $("form label").eq(6).find("input").blur(function () {
+                var reg = /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/;
+                var res = reg.test($(this).val());
+
+                if(!res){
+                    //console.log(1);
+                    $(this).css({border:"1px solid #f77799",boxShadow:"0 0 5px #f77799"}).siblings("b").html("请输入正确格式的邮箱！")
+                        .css({background:"url(../images/error.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+
+                }else{
+                    $(this).css({border:"1px solid #cccccc;",boxShadow:"0 0 0"}).siblings("b")
+                        .css({background:"url(../images/right.png) no-repeat left center",paddingLeft:"20px",marginLeft:"10px"});
+
+                }
+            });
+            $("#btn").click(function () {
+                var IsBy = $.idcode.validateCode();  //调用返回值，返回值结果为true或者false
+
+                var val0 = $("form label").eq(0).find("input").val();
+                var val1 = $("form label").eq(1).find("input").val();
+                var val8 = $("form label").eq(8).find("input");
+                var val3 = $("form label").eq(3).find("input").val();
+                var val6 = $("form label").eq(6).find("input").val();
+
+                console.log(IsBy);
+                if(IsBy ==false ||  f1==false || f2==false || f3==false || f4==false || val8.prop('checked')==false){
+                    alert("请重新输入")
+                }
+                else {
+
+                    $.get("http://10.36.135.115/bailian/php/registerPhp.php",{userid:val0,pwd:val1,phone:val3,email:val6},function (data) {
+                        var arr = JSON.parse(data);
+
+                        //console.log(arr);
+                        if(arr.status == 1){
+                            $("#tips").css("display","block");
+                            $("#meng").css("display","block");
+                            var i = 5;
+                            var timer = setInterval(function () {
+                                i--;
+                                $("#tips").find("span").html(i);
+                            },1000);
+                            setTimeout(function () {
+                                clearInterval(timer);
+                                location.href = "index.html";
+                            },5000);
+                        }
+                    });
+
+//
+
+                }
+
+            });
+
+
+        })
+    </script>
+
+</head>
+<body>
+<div id="meng"></div>
+<div id="tips">
+    注册成功！<span>5</span>秒后自动跳转!
+</div>
+<div id="head-wrap">
+    <div class="head">
+        <a href="index.html"><img src="../images/header-logo.png"/></a>
+        <span>用户注册</span>
+    </div>
+</div>
+<div id="main-wrap">
+    <div class="main">
+        <div id="m-head">
+            <h4>您好,感谢您加入i百联</h4>
+            <span>如有账号，请点击<a href="login.html">登录</a></span>
+        </div>
+        <form>
+            <label><span><i>*</i>用户名：</span><input type="text"  placeholder="6-20位字符，支持字母或字母与数字组合"/><b></b></label>
+            <label><span><i>*</i>登录密码：</span><input type="password" placeholder="6-20位字符，建议使用字母、符号和数字组合"/><b></b></label>
+            <label><span><i>*</i>确认密码：</span><input type="password" placeholder="请再次输入密码"/><b></b></label>
+            <label><span><i>*</i>手机号：</span><input type="text" placeholder="请输入11位手机号码"/><b></b></label>
+            <label><span><i>*</i>验证码：</span><input class="short" type="text" placeholder="请输入验证码" id ="Txtidcode"/><p id="idcode"></p></label>
+            <label><span>短信验证码：</span><input class="short" type="text" placeholder="6请输入短信验证码"/><em>获取验证码</em> </label>
+            <label><span>电子邮箱：</span><input type="text" placeholder="请输入有效邮箱"/><b></b></label>
+            <label><input class="check" checked="checked" type="checkbox"/>我已阅读并同意<a href="##">《百联通会员注册协议》</a></label>
+            <input type="button" value="立即注册 完成绑定" id="btn"/>
+        </form>
+    </div>
+</div>
+<div id="foot-wrap">
+    <div class="foot">
+        <ul>
+            <li><a href="##">关于我们</a></li>
+            <li><a href="##">联系我们</a></li>
+            <li><a href="##">加盟合作</a></li>
+            <li><a href="##">诚征英才</a></li>
+            <li style="border:none;"><a href="##">友情链接</a></li>
+        </ul>
+        <p>上海百联全渠道电子商务有限公司 版权所有 | 沪ICP备15028847号</p>
+        <p>联系地址：上海市普陀区真光路1258号百联中环广场6楼 | 联系电话：021-52629933 | 咨询热线：400-900-8800 </p>
+        <p>本企业已通过ISO9001:2000 质量管理体系标准认证 | 认证注册号：04206Q10079ROM | 认可注册号：CNAB042-Q | 增值电信业务经营许可证：沪B2-20100062 96.2</p>
+    </div>
+</div>
+</body>
+</html>

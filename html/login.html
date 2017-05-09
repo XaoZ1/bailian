@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎登陆</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../JavaScript/jquery-1.12.3.js"></script>
+    <script src="../JavaScript/jquery.cookie.js"></script>
+    <script>
+
+        $(function () {
+            $("#login").click(function () {
+                var input1 = $("#login1 input").eq(0).val();
+                var input2 = $("#login1 input").eq(1).val();
+                //console.log($("#login1 input").eq(0).val());
+                //console.log($("#login1 input").eq(1).val());
+                $("#ohter a").eq(0).hover(function () {
+                    $(this).css("background","url('../images/../images/login-cion-1.png') no-repeat 0 -22px")
+                },function () {
+                    $(this).css("background","url(../images/../images/login-cion-1.png) no-repeat 0 0")
+                });
+
+                $.get("http://10.36.135.115/bailian/php/loginPhp.php",{username:input1,pwd:input2},function (data) {
+
+                    var obj = JSON.parse(data);
+
+                    //console.log(obj);
+                    console.log(JSON.parse(data));
+                    //console.log(JSON.parse(data).status);
+                    if(obj.status == 1){
+                        $.cookie("user", JSON.stringify(data), {expires:1, path:"/"});
+                        //console.log($.cookie("user"));
+                        //alert(1)
+                        location.href = "index.html";
+                    }else{
+                        alert("用户名或密码错误！");
+                    }
+                })
+
+            });
+        })
+
+    </script>
+
+
+</head>
+<body>
+<div id="head-wrap">
+    <div class="head">
+        <a href="index.html"><img src="../images/header-logo.png"/></a>
+        <span>欢迎登陆</span>
+    </div>
+</div>
+<div id="main-wrap">
+    <div id="login1">
+        <h1>会员登录<a href="register.html">注册新账号</a></h1>
+        <input id="val1" type="text" placeholder="用户名/手机号/邮箱"/>
+        <input id="val2" type="password" placeholder="密码"/>
+        <div class="d1">忘记密码？</div>
+        <input id="login" type="button" value="登录"/>
+
+        <div id="other">
+            <span>其他账号联合登录</span>
+            <a href="##"></a>
+            <a href="##"></a>
+            <a href="##"></a>
+            <a href="##"></a>
+        </div>
+    </div>
+</div>
+
+<div id="foot-wrap">
+    <div class="foot">
+        <ul>
+            <li><a href="##">关于我们</a></li>
+            <li><a href="##">联系我们</a></li>
+            <li><a href="##">加盟合作</a></li>
+            <li><a href="##">诚征英才</a></li>
+            <li style="border:none;"><a href="##">友情链接</a></li>
+        </ul>
+        <p>上海百联全渠道电子商务有限公司 版权所有 | 沪ICP备15028847号</p>
+        <p>联系地址：上海市普陀区真光路1258号百联中环广场6楼 | 联系电话：021-52629933 | 咨询热线：400-900-8800 </p>
+        <p>本企业已通过ISO9001:2000 质量管理体系标准认证 | 认证注册号：04206Q10079ROM | 认可注册号：CNAB042-Q | 增值电信业务经营许可证：沪B2-20100062 96.2</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+#thickdesk{position:absolute;position:fixed;_position:absolute;height:100%;_height:expression(document.body.offsetHeight+"px");z-index:10000;left:0;top:0;width:100%;background:#000;opacity: 0.5;display:none;}
+.pop-up{position:absolute;background:#fafafa;border:1px solid #aaa;box-shadow:0 0 2px 2px rgba(0,0,0,0.1);}
+.pop-up .caption{background:#eee;}
+.pop-up .caption .text{line-height:44px;padding-left:20px;font-size:14px;color:#666;font-family:"Microsoft YaHei";font-weight:bold;}
+.pop-up .caption .closebox{position:relative;}
+.pop-up .caption a{width:30px;height:22px;padding-top:14px;text-align:center;margin-top:-45px;color:#a8a8a3;font-size:32px;text-decoration:none;cursor:pointer;position:absolute;right:6px;}
+.pop-up .caption a:hover{text-decoration:none;color:#333;background:#ccc;}        
+.pop-up img{float:left;display:inline;}
+.pop-up .content{background:#fff;float:left;display:inline;}
+.pop-up .content .info{padding:20px 20px 24px 20px;float:left;display:inline;min-width:340px;}
+.pop-up .content .info .message-line{width:340px;height:auto;border-bottom:1px solid #e4e4e4;padding-bottom:18px;}
+.pop-up .content .message-center .message-line{text-align:center;}
+
+.pop-up .content .info .line-center{display:inline-block;}
+
+.pop-up .content .info .txt{margin-left:12px;width:250px;height:auto;float:left;display:inline;}
+.pop-up .content .info .txt .name{width:100%;font-size:15px;line-height:24px;float:left;display:inline;font-family:"Microsoft YaHei";font-weight:bold;color:#333;}
+.pop-up .content .info .txt .word{width:100%;color:#666;line-height:20px;width:100%;margin-top:2px;font-size:12px;float:left;display:inline;font-family:"Microsoft YaHei";}
+.pop-up .content .info i{width:36px;height:36px;float:left;display:inline;background:url("//img.iblimg.com/respc-1/resources/v4.0/css/i/alert-icon.png") no-repeat;margin-left:20px;}
+.pop-up .content .info i.success{background-position:0 0;}
+.pop-up .content .info i.failure{background-position:0 -36px;}
+.pop-up .content .info i.warning{background-position:0 -72px;}
+.pop-up .content .message-only i{margin-left:50px;}
+.pop-up .content .message-only .txt{width:220px;}
+.pop-up .content .message-only .txt .name{line-height:24px;padding:6px 0;}
+.pop-up .content .message-center .txt{margin-left:20px;width:300px;}
+.pop-up .content .message-center .txt .name{min-height:33px;line-height:22px;font-size:14px;color:#333;font-weight:normal;}
+
+
+.pop-up .content .info .btn-line{width:100%;height:auto;padding-top:15px;}
+.pop-up .content .btn-line{text-align:center;*width:auto;*margin-left:98px;}
+.pop-up .content .info .btn-left{margin-left:68px;}
+.pop-up .content .message-only .btn-left{margin-left:98px;}
+
+.pop-up .content .info .btn{margin-right:8px;}
+.pop-up .content .info .blue{color:#08c}
+.pop-up .content .info .bold{font-weight:bold;}
+
+.pop-up .content .info .textarea{height:100px;position:relative;width:340px;}
+.pop-up .content .info .textarea textarea {border:1px solid #ddd;height:98px;padding-left:5px;resize:none;width:333px;}
+.pop-up .content .info .textarea .number {bottom:0;color:#666;display:inline;float:right;height:24px;line-height:24px;position:absolute;right:8px;}
+

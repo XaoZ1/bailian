@@ -1,0 +1,126 @@
+/*public*/
+.btn{
+	cursor:pointer;
+	border:0;
+	text-align:center;
+	font-family:'Microsoft YaHei';
+	transition:all 0.08s ease-in;
+	-moz-transition:all 0.08s ease-in;
+	-ms-transition:all 0.08s ease-in;
+	-o-transition:all 0.08s ease-in;
+	-webkit-transition:all 0.08s ease-in;
+	outline:none;
+}
+
+/*button-1*/
+.btn-primary{
+	color: #ffffff;
+	background: #e6133c;
+	font-size: 16px;
+	height:36px;
+	width:136px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+.btn-primary:hover{
+	background:#fa2244;
+}
+.btn-notprimary{
+	color: #ffffff;
+	background: #bbbbbb;
+	font-size: 16px;
+	height:36px;
+	width:136px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+
+/*button-2*/
+.btn-secondary{
+	height:26px;
+	background:#e6133c;
+	width:70px;
+	color:#fff;
+	font-size:12px;
+}
+.btn-secondary:hover{
+	background:#fa2244;
+}
+.btn-notsecondary{
+	height:26px;
+	background:#bbbbbb;
+	width:70px;
+	color:#fff;
+	font-size:12px;
+}
+.btn-notsecondaryclick{
+	height:26px;
+	background:#fa2244;
+	width:70px;
+	color:#fff;
+	font-size:12px;
+}
+
+/*button-3*/
+.btn-submit{
+	height:26px;
+	width:70px;
+	background:#fff;
+	color:#333;
+	border:1px solid #cccccc;
+	font-size:12px;
+}
+.btn-submit:hover{
+	color:#000;
+	border:1px solid #999;
+}
+.btn-notsubmit{
+	height:26px;
+	width:70px;
+	background:#eeeeee;
+	border:1px solid #cccccc;
+	color:#999999;
+	font-size:12px;
+}
+.btn-notsubmitclick{
+	height:26px;
+	width:70px;
+	background:#fff;
+	border:1px solid #cccccc;
+	color:#333333;
+	font-size:12px;
+}
+
+
+/*button-4*/
+.btn-greysubmit{
+	height:26px;
+	width:70px;
+	background:#f5f5f5;
+	color:#333;
+	border:1px solid #cccccc;
+	font-size:12px;
+}
+.btn-greysubmit:hover{
+	color:#000;
+	border:1px solid #999;
+	background:#eee;
+}
+.btn-notgreysubmit{
+	height:26px;
+	width:70px;
+	background:#eeeeee;
+	border:1px solid #cccccc;
+	color:#999999;
+	font-size:12px;
+}
+.btn-notgreysubmitclick{
+	height:26px;
+	width:70px;
+	background:#f5f5f5;
+	color:#333;
+	border:1px solid #cccccc;
+	font-size:12px;
+}
